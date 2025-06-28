@@ -1,0 +1,1186 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'monitors';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmonitors.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/monitors.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># California Intro</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">shapely.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">Point</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pygris</span><span class="w"> </span><span class="kn">import</span> <span class="n">counties</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Patch</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.colors</span><span class="w"> </span><span class="kn">import</span> <span class="n">ListedColormap</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">shapely.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">Point</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;geopandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the default TIGER/Line file for counties in California</span>
+<span class="n">ca_tiger</span> <span class="o">=</span> <span class="n">counties</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="s2">&quot;CA&quot;</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Using the default year of 2021
+Using FIPS code &#39;06&#39; for input &#39;CA&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">ca_tiger</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;STATEFP&#39;, &#39;COUNTYFP&#39;, &#39;COUNTYNS&#39;, &#39;GEOID&#39;, &#39;NAME&#39;, &#39;NAMELSAD&#39;, &#39;LSAD&#39;,
+       &#39;CLASSFP&#39;, &#39;MTFCC&#39;, &#39;CSAFP&#39;, &#39;CBSAFP&#39;, &#39;METDIVFP&#39;, &#39;FUNCSTAT&#39;, &#39;ALAND&#39;,
+       &#39;AWATER&#39;, &#39;INTPTLAT&#39;, &#39;INTPTLON&#39;, &#39;geometry&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the current working directory</span>
+<span class="n">current_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+
+<span class="c1"># Construct the file path by joining the current directory with the relative path</span>
+<span class="n">csv_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">current_directory</span><span class="p">,</span> <span class="s1">&#39;Geoprogram&#39;</span><span class="p">,</span> <span class="s1">&#39;monitor.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Print the file path</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CSV Path:&quot;</span><span class="p">,</span> <span class="n">csv_path</span><span class="p">)</span>
+
+<span class="c1"># Read the shapefile using the constructed file path</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_path</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CSV Path: /home/bd2a404a-d050-4548-bcf4-7bee4e916ab9/Geoprogram/monitor.csv
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the list of parameters and corresponding colors</span>
+<span class="n">parameters_colors</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Sulfur dioxide&#39;</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Ozone&#39;</span><span class="p">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;PM2.5 - Local Conditions&#39;</span><span class="p">:</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Carbon monoxide&#39;</span><span class="p">:</span> <span class="s1">&#39;purple&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Nitric oxide (NO)&#39;</span><span class="p">:</span> <span class="s1">&#39;orange&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filter the DataFrame for monitors in California</span>
+<span class="n">california_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;State Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;California&#39;</span><span class="p">])]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">california_df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>State Code</th>
+      <th>County Code</th>
+      <th>Site Num</th>
+      <th>Parameter Code</th>
+      <th>POC</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Datum</th>
+      <th>Parameter Name</th>
+      <th>Sample Duration</th>
+      <th>...</th>
+      <th>75th Percentile</th>
+      <th>50th Percentile</th>
+      <th>10th Percentile</th>
+      <th>Local Site Name</th>
+      <th>Address</th>
+      <th>State Name</th>
+      <th>County Name</th>
+      <th>City Name</th>
+      <th>CBSA Name</th>
+      <th>Date of Last Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2646</th>
+      <td>6</td>
+      <td>1</td>
+      <td>7</td>
+      <td>42601</td>
+      <td>1</td>
+      <td>37.687526</td>
+      <td>-121.784217</td>
+      <td>WGS84</td>
+      <td>Nitric oxide (NO)</td>
+      <td>1 HOUR</td>
+      <td>...</td>
+      <td>0.400</td>
+      <td>-0.500</td>
+      <td>-0.900</td>
+      <td>Livermore</td>
+      <td>793 Rincon Ave.</td>
+      <td>California</td>
+      <td>Alameda</td>
+      <td>Livermore</td>
+      <td>San Francisco-Oakland-Hayward, CA</td>
+      <td>2023-10-23</td>
+    </tr>
+    <tr>
+      <th>2647</th>
+      <td>6</td>
+      <td>1</td>
+      <td>7</td>
+      <td>42602</td>
+      <td>1</td>
+      <td>37.687526</td>
+      <td>-121.784217</td>
+      <td>WGS84</td>
+      <td>Nitrogen dioxide (NO2)</td>
+      <td>1 HOUR</td>
+      <td>...</td>
+      <td>19.900</td>
+      <td>10.600</td>
+      <td>2.700</td>
+      <td>Livermore</td>
+      <td>793 Rincon Ave.</td>
+      <td>California</td>
+      <td>Alameda</td>
+      <td>Livermore</td>
+      <td>San Francisco-Oakland-Hayward, CA</td>
+      <td>2023-10-23</td>
+    </tr>
+    <tr>
+      <th>2648</th>
+      <td>6</td>
+      <td>1</td>
+      <td>7</td>
+      <td>42602</td>
+      <td>1</td>
+      <td>37.687526</td>
+      <td>-121.784217</td>
+      <td>WGS84</td>
+      <td>Nitrogen dioxide (NO2)</td>
+      <td>1 HOUR</td>
+      <td>...</td>
+      <td>6.200</td>
+      <td>2.900</td>
+      <td>0.900</td>
+      <td>Livermore</td>
+      <td>793 Rincon Ave.</td>
+      <td>California</td>
+      <td>Alameda</td>
+      <td>Livermore</td>
+      <td>San Francisco-Oakland-Hayward, CA</td>
+      <td>2023-10-23</td>
+    </tr>
+    <tr>
+      <th>2649</th>
+      <td>6</td>
+      <td>1</td>
+      <td>7</td>
+      <td>42603</td>
+      <td>1</td>
+      <td>37.687526</td>
+      <td>-121.784217</td>
+      <td>WGS84</td>
+      <td>Oxides of nitrogen (NOx)</td>
+      <td>1 HOUR</td>
+      <td>...</td>
+      <td>6.100</td>
+      <td>2.600</td>
+      <td>0.200</td>
+      <td>Livermore</td>
+      <td>793 Rincon Ave.</td>
+      <td>California</td>
+      <td>Alameda</td>
+      <td>Livermore</td>
+      <td>San Francisco-Oakland-Hayward, CA</td>
+      <td>2023-10-23</td>
+    </tr>
+    <tr>
+      <th>2650</th>
+      <td>6</td>
+      <td>1</td>
+      <td>7</td>
+      <td>44201</td>
+      <td>1</td>
+      <td>37.687526</td>
+      <td>-121.784217</td>
+      <td>WGS84</td>
+      <td>Ozone</td>
+      <td>1 HOUR</td>
+      <td>...</td>
+      <td>0.047</td>
+      <td>0.042</td>
+      <td>0.034</td>
+      <td>Livermore</td>
+      <td>793 Rincon Ave.</td>
+      <td>California</td>
+      <td>Alameda</td>
+      <td>Livermore</td>
+      <td>San Francisco-Oakland-Hayward, CA</td>
+      <td>2023-10-23</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>8036</th>
+      <td>6</td>
+      <td>113</td>
+      <td>1003</td>
+      <td>88101</td>
+      <td>3</td>
+      <td>38.661210</td>
+      <td>-121.732690</td>
+      <td>WGS84</td>
+      <td>PM2.5 - Local Conditions</td>
+      <td>24-HR BLK AVG</td>
+      <td>...</td>
+      <td>5.200</td>
+      <td>3.900</td>
+      <td>2.000</td>
+      <td>Woodland-Gibson Road</td>
+      <td>41929 E. GIBSON ROAD, WOODLAND</td>
+      <td>California</td>
+      <td>Yolo</td>
+      <td>Woodland</td>
+      <td>Sacramento--Roseville--Arden-Arcade, CA</td>
+      <td>2023-08-16</td>
+    </tr>
+    <tr>
+      <th>8037</th>
+      <td>6</td>
+      <td>113</td>
+      <td>1003</td>
+      <td>88101</td>
+      <td>3</td>
+      <td>38.661210</td>
+      <td>-121.732690</td>
+      <td>WGS84</td>
+      <td>PM2.5 - Local Conditions</td>
+      <td>24-HR BLK AVG</td>
+      <td>...</td>
+      <td>5.200</td>
+      <td>3.900</td>
+      <td>2.000</td>
+      <td>Woodland-Gibson Road</td>
+      <td>41929 E. GIBSON ROAD, WOODLAND</td>
+      <td>California</td>
+      <td>Yolo</td>
+      <td>Woodland</td>
+      <td>Sacramento--Roseville--Arden-Arcade, CA</td>
+      <td>2023-08-16</td>
+    </tr>
+    <tr>
+      <th>8038</th>
+      <td>6</td>
+      <td>113</td>
+      <td>1003</td>
+      <td>88101</td>
+      <td>3</td>
+      <td>38.661210</td>
+      <td>-121.732690</td>
+      <td>WGS84</td>
+      <td>PM2.5 - Local Conditions</td>
+      <td>24-HR BLK AVG</td>
+      <td>...</td>
+      <td>5.200</td>
+      <td>3.900</td>
+      <td>2.000</td>
+      <td>Woodland-Gibson Road</td>
+      <td>41929 E. GIBSON ROAD, WOODLAND</td>
+      <td>California</td>
+      <td>Yolo</td>
+      <td>Woodland</td>
+      <td>Sacramento--Roseville--Arden-Arcade, CA</td>
+      <td>2023-08-16</td>
+    </tr>
+    <tr>
+      <th>8039</th>
+      <td>6</td>
+      <td>113</td>
+      <td>2001</td>
+      <td>81102</td>
+      <td>1</td>
+      <td>38.571460</td>
+      <td>-121.525790</td>
+      <td>WGS84</td>
+      <td>PM10 Total 0-10um STP</td>
+      <td>24 HOUR</td>
+      <td>...</td>
+      <td>18.000</td>
+      <td>12.000</td>
+      <td>4.000</td>
+      <td>West Sacramento-15th Street</td>
+      <td>132 15TH ST., WEST SACRAMENTO</td>
+      <td>California</td>
+      <td>Yolo</td>
+      <td>West Sacramento</td>
+      <td>Sacramento--Roseville--Arden-Arcade, CA</td>
+      <td>2023-10-06</td>
+    </tr>
+    <tr>
+      <th>8040</th>
+      <td>6</td>
+      <td>113</td>
+      <td>2001</td>
+      <td>85101</td>
+      <td>1</td>
+      <td>38.571460</td>
+      <td>-121.525790</td>
+      <td>WGS84</td>
+      <td>PM10 - LC</td>
+      <td>24 HOUR</td>
+      <td>...</td>
+      <td>19.000</td>
+      <td>12.000</td>
+      <td>4.000</td>
+      <td>West Sacramento-15th Street</td>
+      <td>132 15TH ST., WEST SACRAMENTO</td>
+      <td>California</td>
+      <td>Yolo</td>
+      <td>West Sacramento</td>
+      <td>Sacramento--Roseville--Arden-Arcade, CA</td>
+      <td>2023-10-06</td>
+    </tr>
+  </tbody>
+</table>
+<p>5395 rows × 55 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot the map of California using ca_tiger directly</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">ca_tiger</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/e406e69e2c68151db2a44730099b285da89f9b38ab178d00198514fbe5934055.png" src="_images/e406e69e2c68151db2a44730099b285da89f9b38ab178d00198514fbe5934055.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create an empty plot</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ca_tiger</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="c1"># Iterate through each parameter and plot points on the map</span>
+
+<span class="k">for</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="n">parameters_colors</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="c1"># Filter the DataFrame for the current parameter</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">california_df</span><span class="p">[</span><span class="n">california_df</span><span class="p">[</span><span class="s1">&#39;Parameter Name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">parameter</span><span class="p">]</span>
+
+    <span class="c1"># Convert the filtered DataFrame to a GeoDataFrame with Point geometries</span>
+    <span class="n">geometry</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="n">xy</span><span class="p">)</span> <span class="k">for</span> <span class="n">xy</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">[</span><span class="s1">&#39;Longitude&#39;</span><span class="p">],</span> <span class="n">filtered_df</span><span class="p">[</span><span class="s1">&#39;Latitude&#39;</span><span class="p">])]</span>
+    <span class="n">crs</span> <span class="o">=</span> <span class="s1">&#39;EPSG:4269&#39;</span>  <span class="c1"># NAD 83</span>
+    <span class="n">gdf_points</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="n">geometry</span><span class="p">,</span> <span class="n">crs</span><span class="o">=</span><span class="n">crs</span><span class="p">)</span>
+
+    <span class="c1"># Plot the GeoDataFrame as points with specified color and label</span>
+    <span class="n">gdf_points</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">parameter</span><span class="p">)</span>
+
+<span class="c1"># Remove ticks from both axes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="c1"># Turn off the entire axis</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+
+<span class="c1"># Add legend outside the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Parameters&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Air Quality Monitoring Stations for Various Parameters in California&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Longitude&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Latitude&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/e8996626f4aece2f68e3ca6505d64f960b7299e4eb231eed84edaba2a18393cb.png" src="_images/e8996626f4aece2f68e3ca6505d64f960b7299e4eb231eed84edaba2a18393cb.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.colors</span><span class="w"> </span><span class="kn">import</span> <span class="n">ListedColormap</span>
+
+<span class="c1"># Assuming ca_tiger is retrieved using a function or method</span>
+<span class="c1"># Load air quality data from CSV</span>
+<span class="n">california_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/bd2a404a-d050-4548-bcf4-7bee4e916ab9/Geoprogram/concentration.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Merge California counties shapefile with air quality data from DataFrame</span>
+<span class="n">county_aqi</span> <span class="o">=</span> <span class="n">ca_tiger</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">california_df</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;County&#39;</span><span class="p">)</span>
+
+<span class="c1"># Define manual breaks and corresponding colors</span>
+<span class="n">bins</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">]</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="s1">&#39;maroon&#39;</span><span class="p">]</span>
+
+<span class="c1"># Create a colormap using the specified colors</span>
+<span class="n">cmap_custom</span> <span class="o">=</span> <span class="n">ListedColormap</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span>
+
+<span class="c1"># Plot choropleth map based on AQI levels using manual breaks and custom colormap</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Plot the geometries (counties) using the respective data column and manual breaks scheme</span>
+<span class="n">county_aqi</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;Max AQI&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="n">cmap</span><span class="o">=</span><span class="n">cmap_custom</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                <span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;UserDefined&#39;</span><span class="p">,</span> <span class="n">classification_kwds</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;bins&#39;</span><span class="p">:</span> <span class="n">bins</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]},</span>
+                <span class="n">legend_kwds</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;labels&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Good&#39;</span><span class="p">,</span> <span class="s1">&#39;Moderate&#39;</span><span class="p">,</span> <span class="s1">&#39;Unhealthy for sensitive groups&#39;</span><span class="p">,</span> <span class="s1">&#39;unhealthy&#39;</span><span class="p">,</span> <span class="s1">&#39;very unhealthy&#39;</span><span class="p">,</span> <span class="s1">&#39;hazardous&#39;</span><span class="p">]})</span>
+
+<span class="c1"># Set title and axis off</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Maximum AQI Levels by County in California&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+<span class="c1"># Adjust layout and display the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/6780f38a5d48534f9209c043b94928a9e11ffa27967cc88bce3ad03e3cf2ff93.png" src="_images/6780f38a5d48534f9209c043b94928a9e11ffa27967cc88bce3ad03e3cf2ff93.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.colors</span><span class="w"> </span><span class="kn">import</span> <span class="n">ListedColormap</span>
+
+<span class="c1"># Assuming ca_tiger is retrieved using a function or method</span>
+<span class="c1"># Load air quality data from CSV</span>
+<span class="n">california_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/bd2a404a-d050-4548-bcf4-7bee4e916ab9/Geoprogram/concentration.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Merge California counties shapefile with air quality data from DataFrame</span>
+<span class="n">county_aqi</span> <span class="o">=</span> <span class="n">ca_tiger</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">california_df</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;County&#39;</span><span class="p">)</span>
+
+<span class="c1"># Calculate percentages for each category based on Days with AQI</span>
+<span class="n">categories</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Moderate Days&#39;</span><span class="p">,</span> <span class="s1">&#39;Unhealthy for Sensitive Groups Days&#39;</span><span class="p">,</span> <span class="s1">&#39;Very Unhealthy Days&#39;</span><span class="p">,</span> <span class="s1">&#39;Hazardous Days&#39;</span><span class="p">]</span>
+<span class="n">total_days_aqi</span> <span class="o">=</span> <span class="n">county_aqi</span><span class="p">[</span><span class="s1">&#39;Days with AQI&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
+    <span class="n">county_aqi</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s1"> Percentage&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">county_aqi</span><span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">/</span> <span class="n">total_days_aqi</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="c1"># Create a custom colormap with red as the maximum color</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#a6d96a&#39;</span><span class="p">,</span> <span class="s1">&#39;#ffffbf&#39;</span><span class="p">,</span> <span class="s1">&#39;#fdbb84&#39;</span><span class="p">,</span> <span class="s1">&#39;#fc8d59&#39;</span><span class="p">,</span> <span class="s1">&#39;#d73027&#39;</span><span class="p">]</span>  <span class="c1"># Red added at the end</span>
+<span class="n">cmap_custom</span> <span class="o">=</span> <span class="n">ListedColormap</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span>
+
+<span class="c1"># Plot choropleth maps for each category with individual legends and custom colormap</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">category</span><span class="p">,</span> <span class="n">ax</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">categories</span><span class="p">,</span> <span class="n">axes</span><span class="o">.</span><span class="n">flatten</span><span class="p">()):</span>
+    <span class="n">county_aqi</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s1"> Percentage&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap_custom</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;quantiles&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Percentage of </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s1"> by County&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+    <span class="n">legend</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend</span><span class="p">()</span>
+    <span class="n">legend</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s1"> Percentage&#39;</span><span class="p">)</span>
+    <span class="n">legend</span><span class="o">.</span><span class="n">set_bbox_to_anchor</span><span class="p">((</span><span class="mf">1.4</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># Adjust the values (x, y) as needed to position the legend</span>
+
+<span class="c1"># Adjust layout and display the plots</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/bd2a404a-d050-4548-bcf4-7bee4e916ab9/.local/lib/python3.11/site-packages/mapclassify/classifiers.py:1592: UserWarning: Not enough unique values in array to form 5 classes. Setting k to 4.
+  self.bins = quantile(y, k=k)
+/home/bd2a404a-d050-4548-bcf4-7bee4e916ab9/.local/lib/python3.11/site-packages/mapclassify/classifiers.py:1592: UserWarning: Not enough unique values in array to form 5 classes. Setting k to 2.
+  self.bins = quantile(y, k=k)
+/home/bd2a404a-d050-4548-bcf4-7bee4e916ab9/.local/lib/python3.11/site-packages/mapclassify/classifiers.py:1592: UserWarning: Not enough unique values in array to form 5 classes. Setting k to 2.
+  self.bins = quantile(y, k=k)
+</pre></div>
+</div>
+<img alt="_images/e8f47e8ce4e21e0e86d928cc8f32bb29e807b871000049f48df03b1c7881ff5c.png" src="_images/e8f47e8ce4e21e0e86d928cc8f32bb29e807b871000049f48df03b1c7881ff5c.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filter rows based on parameter names</span>
+<span class="n">filtered_df</span> <span class="o">=</span> <span class="n">california_df</span><span class="p">[</span><span class="n">california_df</span><span class="p">[</span><span class="s1">&#39;Parameter Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;PM2.5 - Local Conditions&#39;</span><span class="p">,</span> <span class="s1">&#39;NO&#39;</span><span class="p">,</span> <span class="s1">&#39;Ozone&#39;</span><span class="p">,</span> <span class="s1">&#39;CO&#39;</span><span class="p">,</span><span class="s1">&#39;Sulfur dioxide&#39;</span><span class="p">])]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      State Code  County Code  Site Num  Parameter Code  POC   Latitude  \
+2650           6            1         7           44201    1  37.687526   
+2651           6            1         7           44201    1  37.687526   
+2652           6            1         7           44201    1  37.687526   
+2653           6            1         7           44201    1  37.687526   
+2655           6            1         7           88101    3  37.687526   
+...          ...          ...       ...             ...  ...        ...   
+8034           6          113      1003           88101    3  38.661210   
+8035           6          113      1003           88101    3  38.661210   
+8036           6          113      1003           88101    3  38.661210   
+8037           6          113      1003           88101    3  38.661210   
+8038           6          113      1003           88101    3  38.661210   
+
+       Longitude  Datum            Parameter Name          Sample Duration  \
+2650 -121.784217  WGS84                     Ozone                   1 HOUR   
+2651 -121.784217  WGS84                     Ozone  8-HR RUN AVG BEGIN HOUR   
+2652 -121.784217  WGS84                     Ozone  8-HR RUN AVG BEGIN HOUR   
+2653 -121.784217  WGS84                     Ozone  8-HR RUN AVG BEGIN HOUR   
+2655 -121.784217  WGS84  PM2.5 - Local Conditions                   1 HOUR   
+...          ...    ...                       ...                      ...   
+8034 -121.732690  WGS84  PM2.5 - Local Conditions            24-HR BLK AVG   
+8035 -121.732690  WGS84  PM2.5 - Local Conditions            24-HR BLK AVG   
+8036 -121.732690  WGS84  PM2.5 - Local Conditions            24-HR BLK AVG   
+8037 -121.732690  WGS84  PM2.5 - Local Conditions            24-HR BLK AVG   
+8038 -121.732690  WGS84  PM2.5 - Local Conditions            24-HR BLK AVG   
+
+      ... 75th Percentile 50th Percentile 10th Percentile  \
+2650  ...           0.047           0.042           0.034   
+2651  ...           0.043           0.038           0.029   
+2652  ...           0.043           0.038           0.029   
+2653  ...           0.043           0.038           0.029   
+2655  ...           7.000           5.000           1.000   
+...   ...             ...             ...             ...   
+8034  ...           5.200           3.900           2.000   
+8035  ...           5.200           3.900           2.000   
+8036  ...           5.200           3.900           2.000   
+8037  ...           5.200           3.900           2.000   
+8038  ...           5.200           3.900           2.000   
+
+           Local Site Name                         Address  State Name  \
+2650             Livermore                 793 Rincon Ave.  California   
+2651             Livermore                 793 Rincon Ave.  California   
+2652             Livermore                 793 Rincon Ave.  California   
+2653             Livermore                 793 Rincon Ave.  California   
+2655             Livermore                 793 Rincon Ave.  California   
+...                    ...                             ...         ...   
+8034  Woodland-Gibson Road  41929 E. GIBSON ROAD, WOODLAND  California   
+8035  Woodland-Gibson Road  41929 E. GIBSON ROAD, WOODLAND  California   
+8036  Woodland-Gibson Road  41929 E. GIBSON ROAD, WOODLAND  California   
+8037  Woodland-Gibson Road  41929 E. GIBSON ROAD, WOODLAND  California   
+8038  Woodland-Gibson Road  41929 E. GIBSON ROAD, WOODLAND  California   
+
+      County Name  City Name                                CBSA Name  \
+2650      Alameda  Livermore        San Francisco-Oakland-Hayward, CA   
+2651      Alameda  Livermore        San Francisco-Oakland-Hayward, CA   
+2652      Alameda  Livermore        San Francisco-Oakland-Hayward, CA   
+2653      Alameda  Livermore        San Francisco-Oakland-Hayward, CA   
+2655      Alameda  Livermore        San Francisco-Oakland-Hayward, CA   
+...           ...        ...                                      ...   
+8034         Yolo   Woodland  Sacramento--Roseville--Arden-Arcade, CA   
+8035         Yolo   Woodland  Sacramento--Roseville--Arden-Arcade, CA   
+8036         Yolo   Woodland  Sacramento--Roseville--Arden-Arcade, CA   
+8037         Yolo   Woodland  Sacramento--Roseville--Arden-Arcade, CA   
+8038         Yolo   Woodland  Sacramento--Roseville--Arden-Arcade, CA   
+
+      Date of Last Change  
+2650           2023-10-23  
+2651           2023-10-23  
+2652           2023-10-23  
+2653           2023-10-23  
+2655           2023-10-23  
+...                   ...  
+8034           2023-08-16  
+8035           2023-08-16  
+8036           2023-08-16  
+8037           2023-08-16  
+8038           2023-08-16  
+
+[1636 rows x 55 columns]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># Assuming you have the filtered_df DataFrame</span>
+
+<span class="c1"># Create a filename (replace &#39;air_quality_data.csv&#39; with your desired name)</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;air_quality_data.csv&#39;</span>
+
+<span class="c1"># Save the DataFrame to a CSV file</span>
+<span class="n">filtered_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Data successfully saved to: </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data successfully saved to: air_quality_data.csv
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
